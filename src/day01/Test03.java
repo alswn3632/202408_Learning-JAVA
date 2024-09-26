@@ -13,7 +13,7 @@ public class Test03 {
 		 */
 		
 		// 주사위 값 랜덤 발생
-		int random = (int)Math.random()*6+1;
+		int random = (int)(Math.random()*6)+1;
 		System.out.println(random);
 		
 		// 랜덤으로 주사위를 굴려 총 30칸을 이동하시오.
