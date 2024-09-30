@@ -52,10 +52,6 @@ public class CardMain {
 		System.out.println();
 		System.out.println();
 		
-		// 여기서 Student 클래스 테스트
-		Student s = new Student("인천", "신짱구", "AWS 웹 개발자", "01012345678");
-		s.print();
-
 	}
 
 }
