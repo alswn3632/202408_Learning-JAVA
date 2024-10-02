@@ -74,7 +74,7 @@ public class 과제 {
 				break;
 			}
 			
-			if(op.toLowerCase().equals("y")) {
+			if(op.toLowerCase().equals("y")) { // !(str.equals())로 아니라면? 할수있음
 				System.out.println("상품 이름과 가격을 입력해주세요! 쉼표로 구분 ex. 젤리,1000 ");
 				System.out.print(">> ");
 				String str = scan.nextLine();
