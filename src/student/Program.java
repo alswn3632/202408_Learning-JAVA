@@ -19,4 +19,6 @@ public interface Program {
 	void registerSubject(Scanner scan);
 	
 	void deleteSubject(Scanner scan);
+	
+	int searchIndex(Scanner scan);
 }

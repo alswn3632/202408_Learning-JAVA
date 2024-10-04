@@ -10,7 +10,7 @@ public class StudentMain {
 		// 4. 학생정보수정 5. 학생삭제 6. 수강신청 7. 수강철회 6. 종료
 		// interface로 7개 메뉴의 메서드 정리
 		// StudentController가 구현 - Student class 배열처리
-		// Student class : 학생 정보 (학번,이름,나이,전화번호,주소,수강과목s)
+		// Student class : 학생 정보 (학번,이름,나이,전화번호,주소,수강과목s) >> 포함관계
 		//  - 수강과목은 subject class를 배열로 처리
 		// Subject class : 과목 정보 (과목코드,과목명,학점,시수,교수명,시간표,강의장)
 		
@@ -19,6 +19,11 @@ public class StudentMain {
 		
 		int menu = 0;
 		do {
+			System.out.println("-----------------------------------------------------------");
+			System.out.println("1. 학생등록 | 2. 학생리스트출력 | 3. 학생검색(학생정보,수강정보)");
+			System.out.println("4. 학생정보수정 | 5. 학생삭제 | 6. 수강신청 | 7. 수강철회 | 8. 종료");
+			System.out.println("-----------------------------------------------------------");
+			
 			System.out.print("menu: ");
 			menu = scan.nextInt();
 			
