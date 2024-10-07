@@ -139,11 +139,17 @@ public class LottoController {
 
 	//당첨 확인
 	public void jackpot() {
+		
+		if(!toggle) {
+			System.out.println("당첨번호가 존재하지 않습니다.");
+			return;
+		}
+		
 		int rank1 = 0, rank2 = 0, rank3 = 0, rank4 = 0, rank5 = 0, rank6 = 0;
-		System.out.println("------" + (round-1) + "회차 결과를 확인하겠습니다!------");
-		System.out.println("--당첨번호--");
+		System.out.println("<<" + (round-1) + "회차 결과를 확인>>");
+		System.out.println("당첨번호");
 		winnerArr[round-2].printLotto();
-		System.out.println("--사용자번호--");
+		System.out.println("사용자번호");
 		
 		for(int f=0; f<userCnt; f++) {
 			int cnt = 0;
