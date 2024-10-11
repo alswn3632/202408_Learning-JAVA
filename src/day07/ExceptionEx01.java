@@ -104,6 +104,6 @@ public class ExceptionEx01 {
 }
 
 
-class A extends ExceptionEx01{
-	
-}
+//class A extends ExceptionEx01{
+//	
+//}

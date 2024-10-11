@@ -226,6 +226,6 @@ public class Collection01 {
 }
 
 
-class a {
-	int a;
-}
+//class a {
+//	int a;
+//}
