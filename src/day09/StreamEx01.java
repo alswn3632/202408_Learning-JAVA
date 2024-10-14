@@ -57,6 +57,11 @@ public class StreamEx01 {
 		}).forEach(n->{
 			System.out.println("이름:" + n.getName() + " 나이:" + n.getAge() + " 비용:" + (n.getAge() >= 15? "100만원" : "50만원"));
 		});
-	}
-
+		
+		// 익명클래스를 사용할 경우 Compatator 대상 값이(매개변수) 2개
+		// 클래스 내부에서 구현할 경우 Comparable 대상 값이(매개변수) 1개
+		
+		
+	}	
+	
 }
