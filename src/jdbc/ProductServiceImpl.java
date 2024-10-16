@@ -34,4 +34,31 @@ public class ProductServiceImpl implements Service {
 		return dao.selectList();
 	}
 
+
+	@Override
+	public Product getProduct(int pno) {
+		
+		System.out.println("상품 검색 serviceImpl success!!");
+		
+		return dao.selectProduct(pno);
+	}
+
+
+	@Override
+	public int update(Product p) {
+		
+		System.out.println("상품 수정 serviceImpl success!!");
+		
+		return dao.update(p);
+	}
+
+
+	@Override
+	public int delete(int pno) {
+		
+		System.out.println("상품 삭제 serviceImpl success!!");
+		
+		return dao.delete(pno);
+	}
+
 }

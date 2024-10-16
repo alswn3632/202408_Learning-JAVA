@@ -18,7 +18,7 @@ public class Thread03 {
 		JoinTest jt2 = new JoinTest(51,100);
 		
 		System.out.println("--------준비~ 시작");
-		
+		long a = System.currentTimeMillis();
 		jt1.start();
 		try {
 			jt1.join();
@@ -31,14 +31,15 @@ public class Thread03 {
 		jt2.start();
 		try {
 			jt2.join();
-			Thread.sleep(1000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println("중간점검 51~100 >> " + jt2.total);
 		
 		System.out.println("--------땡 끝!" + (jt1.total + jt2.total));
-		
+		long b = System.currentTimeMillis();
+		System.out.println(((b-a)/1000)+"초");
 	}
 
 }

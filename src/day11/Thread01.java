@@ -30,10 +30,11 @@ public class Thread01 {
 		MyThread mt1 = new MyThread();
 		mt1.start(); // run() 메서드 실행
 		
+		System.out.println();
 		MyThread mt2 = new MyThread();
 		mt2.start();
-		
 		System.out.println("Thread end!!");
+		
 	}
 
 }
