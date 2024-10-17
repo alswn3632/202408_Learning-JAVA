@@ -6,6 +6,7 @@ public class StudentMain {
 		
 		StudentController sc = new StudentController();
 		System.out.println("📝");
+		System.err.println("🏡");
 		sc.printMenu();
 	}
 
