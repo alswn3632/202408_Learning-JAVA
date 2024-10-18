@@ -41,8 +41,7 @@ public class Hotel {
 
 	@Override
 	public String toString() {
-		return  hotelPo+" "+"\r\n"
-				+ "🏢 매입	: "+price+"만원"+" | ✈︎ 통행료 : "+toll+"만원"+"\r\n"
+		return  "🏢 매입	: "+price+"만원"+" | ✈︎ 통행료 : "+toll+"만원"+"\r\n"
 				+ "💰 인수	: "+take+"만원"+" | 💸 매각  : "+sale+"만원";
 	}
 
